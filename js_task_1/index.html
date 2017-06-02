@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!--Set Bootstrap CSS from CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--User CSS-->
+    <link rel="stylesheet" href="./static/css/general.css">
+    <!--Set jQuery from CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+    <!--Set Bootstrap JS from CDN-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
+    <!--User script-->
+    <script src="./static/js/main.js" defer></script>
+
+    <title>JS Examples</title>
+</head>
+<body>
+<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><strong>JS</strong> currency conversion example</a>
+        </div>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br>
+<div class="scroll-left">
+    <p id="cur_text">Currency rates are loading</p>
+</div>
+<div class="container col-lg-3 col-centered">
+        <div class="form-group col-lg-6 col-left">
+            <label for="cur_from">From:</label>
+            <select class="form-control" id="cur_from">
+            </select>
+        </div>
+        <div class="form-group col-lg-6 col-right">
+            <label for="cur_to">To:</label>
+            <select class="form-control" id="cur_to">
+            </select>
+        </div>
+    <div class="form-group">
+        <label for="cur_amount" class="color_red">Amount:</label>
+        <input type="text" class="form-control" id="cur_amount">
+    </div>
+    <div class="form-group">
+        <label for="result">Result:</label>
+        <textarea class="form-control" rows="1" id="result"></textarea>
+    </div>
+    <h3><p id="cur_result" class="text-center"></p></h3>
+    <button type="button" class="btn btn-primary" id="run">Run</button>
+</div>
+</body>
+</html>
